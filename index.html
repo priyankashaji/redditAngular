@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <body>
+    <div ng-app="myApp" ng-controller="blogCtrl">
+      <div ng-repeat="blog in myData">
+        <div class="blogThumbnail">
+          <img src={{blog.thumbnail}}>
+        </div>
+        <div class="blogContent">
+          <a href={{blog.url}}>{{blog.title}}</a><br>
+          Posted {{blog.hours}} hours ago by {{blog.author}}<br>
+          comments{{blog.comments}}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

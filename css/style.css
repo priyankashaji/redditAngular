@@ -1,0 +1,8 @@
+.blogThumbnail{
+  display: inline-block;
+  }
+.blogContent{
+  display:inline-block;
+  overflow: hidden;
+  margin-left: 10px;
+}
